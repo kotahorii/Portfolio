@@ -1,34 +1,25 @@
 class Api::V1::LabelsController < ApplicationController
-  before_action :set_label, except: %i[index create]
-
-  def index
-    labels = Label.all
-    render json: labels
-  end
-
   def create
-    label = Label.new(label_params)
-    label.user_id = current_api_v1_user.id
+    label = current_api_v1_user.labels.new(label_params)
+    post = Post.find_by(id: label.post_id)
     if label.save
-      render json: label
+      render json: post, serializer: PostSerializer
     else
       render json: { data: '作成に失敗しました'}
     end
   end
 
   def destroy
-    if @label.destroy
-      render json: { data: '投稿を削除しました' }
+    label = Label.find(params[:id])
+    post = Post.find_by(id: label.post_id)
+    if label.destroy
+      render json: post, serializer: PostSerializer
     else
       render json: { data: '削除に失敗しました' }
     end
   end
 
   private
-
-  def set_label
-    @label = Label.find(params[:id])
-  end
 
   def label_params
     params.permit(:name, :post_id)

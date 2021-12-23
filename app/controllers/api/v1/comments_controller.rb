@@ -1,14 +1,9 @@
 class Api::V1::CommentsController < ApplicationController
-  def index
-    comments = Comment.all.order(created_at: 'DESC')
-    render json: comments
-  end
-
   def create
-    comment = Comment.new(comment_params)
-    comment.user_id = current_api_v1_user.id
+    comment = current_api_v1_user.comments.new(comment_params)
+    post = Post.find_by(id: comment.post_id)
     if comment.save
-      render json: comment
+      render json: post, serializer: PostSerializer
     else
       render json: { data: '作成に失敗しました'}
     end
