@@ -11,12 +11,9 @@ class Api::V1::RatesController < ApplicationController
 
   def update
     rate = Rate.find(params[:id])
-    rate.rate = rate_params[:rate]
-    rate.post_id = rate_params[:post_id]
-    rate.user_id = current_api_v1_user.id
     post = Post.find_by(id: rate.post_id)
 
-    if rate.save
+    if rate.update(rate: rate_params[:rate], post_id: rate_params[:post_id], user_id: current_api_v1_user.id)
       render json: post, serializer: PostSerializer
     else
       render json: { data: '更新に失敗しました' }
