@@ -61,3 +61,38 @@ User.create!(
   prefecture: 14,
 )
 
+Post.create!(
+  user_id: 4,
+  title: '五稜郭タワー',
+  body: '歴史を感じさせます。',
+  prefecture: '北海道',
+  city: '函館市',
+  town: '五稜郭町',
+  image: open('./app/images/post/goryokaku.jpeg'),
+  lat: 41.795413,
+  lng: 140.752721,
+)
+
+Post.create!(
+  user_id: 4,
+  title: 'さっぽろテレビ塔',
+  body: 'すごく大きいです。',
+  prefecture: '北海道',
+  city: '札幌市中央区',
+  town: '大通西',
+  image: open('./app/images/post/sapporo_tower.jpeg'),
+  lat: 43.05934,
+  lng: 141.34198,
+)
+
+Post.create!(
+  user_id: 4,
+  title: '神居古潭の吊り橋',
+  body: '趣があります。',
+  prefecture: '北海道',
+  city: '旭川市',
+  town: '神居町神居古潭',
+  image: open('./app/images/post/kamuikotan.jpeg'),
+  lat: 43.721547,
+  lng: 142.198833,
+)
