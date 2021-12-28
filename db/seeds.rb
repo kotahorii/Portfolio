@@ -97,3 +97,15 @@ Post.create!(
   lng: 142.198833,
 )
 
+Post.create!(
+  user_id: 1,
+  title: '道頓堀',
+  body: '川が綺麗です',
+  prefecture: '大阪府',
+  city: '大阪市中央区',
+  town: '道頓堀',
+  image: open('./app/images/post/dotonbori.jpeg'),
+  lat: 34.668647,
+  lng: 135.503098,
+)
+
