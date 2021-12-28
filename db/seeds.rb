@@ -109,3 +109,14 @@ Post.create!(
   lng: 135.503098,
 )
 
+Post.create!(
+  user_id: 1,
+  title: '通天閣',
+  body: 'すごく大きい塔でした',
+  prefecture: '大阪府',
+  city: '大阪市浪速区',
+  town: '恵美須東',
+  image: open('./app/images/post/tsutenkaku.jpeg'),
+  lat: 34.651238,
+  lng: 135.50575,
+)
