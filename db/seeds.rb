@@ -197,13 +197,37 @@ Post.create!(
 )
 
 Post.create!(
-  user_id: 4,
-  title: 'シーサイドももち海浜公園',
-  body: '海が近くて綺麗な公園です',
-  prefecture: '福岡県',
-  city: '福岡市早良区',
-  town: '百道浜',
-  image: open('./app/images/post/momochi.jpeg'),
-  lat: 33.594871,
-  lng: 130.35224,
+  user_id: 5,
+  title: '中華街',
+  body: '食べ物が美味しい場所です',
+  prefecture: '神奈川県',
+  city: '横浜市中区',
+  town: '山下町',
+  image: open('./app/images/post/tyukagai.jpeg'),
+  lat: 35.449881,
+  lng: 139.652861,
+)
+
+Post.create!(
+  user_id: 5,
+  title: '雷門',
+  body: '提灯が大きいです',
+  prefecture: '東京都',
+  city: '台東区',
+  town: '雷門',
+  image: open('./app/images/post/kaminarimonn.jpeg'),
+  lat: 35.449881,
+  lng: 139.652861,
+)
+
+Post.create!(
+  user_id: 5,
+  title: '東京駅',
+  body: '夜景が綺麗です',
+  prefecture: '東京都',
+  city: '千代田区',
+  town: '丸の内',
+  image: open('./app/images/post/tokyo_station.jpeg'),
+  lat: 35.680406,
+  lng: 139.766486,
 )
