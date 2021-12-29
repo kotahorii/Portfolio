@@ -63,7 +63,7 @@ User.create!(
 
 Post.create!(
   user_id: 4,
-  title: '札幌駅',
+  title: '洞爺湖',
   body: '夜景が綺麗です',
   prefecture: '北海道',
   city: '虻田郡洞爺湖町',
