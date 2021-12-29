@@ -123,12 +123,36 @@ Post.create!(
 
 Post.create!(
   user_id: 1,
-  title: '天王寺公園',
-  body: '池が綺麗な公園です',
-  prefecture: '大阪府',
-  city: '大阪市天王寺区',
-  town: '茶臼山町',
-  image: open('./app/images/post/tennnoji_park.jpeg'),
-  lat: 34.650324,
-  lng: 135.512232,
+  title: 'メリケンパーク',
+  body: '夜景が綺麗です',
+  prefecture: '兵庫県',
+  city: '神戸市中央区',
+  town: '波止場町',
+  image: open('./app/images/post/meriken_park.jpeg'),
+  lat: 34.682577,
+  lng: 135.188059,
+)
+
+Post.create!(
+  user_id: 2,
+  title: '名古屋港',
+  body: '船がたくさんあります',
+  prefecture: '愛知県',
+  city: '名古屋市港区',
+  town: '港町',
+  image: open('./app/images/post/nagoyako.jpeg'),
+  lat: 35.090071,
+  lng: 136.882226,
+)
+
+Post.create!(
+  user_id: 2,
+  title: '名古屋港',
+  body: '船がたくさんあります',
+  prefecture: '愛知県',
+  city: '名古屋市港区',
+  town: '港町',
+  image: open('./app/images/post/nagoyako.jpeg'),
+  lat: 35.090071,
+  lng: 136.882226,
 )
