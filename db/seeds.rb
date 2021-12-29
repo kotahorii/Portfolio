@@ -17,15 +17,6 @@ User.create!(
 )
 
 User.create!(
-  email: "user3@test.com",
-  password: 'aaaaaa',
-  name: '田中 一夫',
-  image: open('./app/images/user/user3.jpeg'),
-  introduction: '地元の魅力を伝えたくて初めてみました。主に中国、四国地方の写真をあげたいと思っています。',
-  prefecture: 35,
-)
-
-User.create!(
   email: "user4@test.com",
   password: 'aaaaaa',
   name: '岡田 裕之',
@@ -147,12 +138,60 @@ Post.create!(
 
 Post.create!(
   user_id: 2,
-  title: '名古屋港',
-  body: '船がたくさんあります',
+  title: '名古屋市科学館',
+  body: '貴重な体験ができます',
   prefecture: '愛知県',
-  city: '名古屋市港区',
-  town: '港町',
-  image: open('./app/images/post/nagoyako.jpeg'),
-  lat: 35.090071,
-  lng: 136.882226,
+  city: '名古屋市中区',
+  town: '栄',
+  image: open('./app/images/post/nagoya_science.jpeg'),
+  lat: 35.164814,
+  lng: 136.90405,
+)
+
+Post.create!(
+  user_id: 2,
+  title: '納屋橋',
+  body: 'おしゃれな橋です',
+  prefecture: '愛知県',
+  city: '名古屋市中区',
+  town: '栄',
+  image: open('./app/images/post/nayabashi.jpeg'),
+  lat: 35.164814,
+  lng: 136.90405,
+)
+
+Post.create!(
+  user_id: 2,
+  title: '納屋橋',
+  body: 'おしゃれな橋です',
+  prefecture: '愛知県',
+  city: '名古屋市中区',
+  town: '栄',
+  image: open('./app/images/post/nayabashi.jpeg'),
+  lat: 35.164814,
+  lng: 136.90405,
+)
+
+Post.create!(
+  user_id: 5,
+  title: '福岡ドーム',
+  body: '夜景が綺麗なドームです',
+  prefecture: '福岡県',
+  city: '福岡市中央区',
+  town: '地行浜',
+  image: open('./app/images/post/hukuoka_dome.jpeg'),
+  lat: 33.59489,
+  lng: 130.361167,
+)
+
+Post.create!(
+  user_id: 5,
+  title: '海の中道',
+  body: '海が綺麗な場所です',
+  prefecture: '福岡県',
+  city: '福岡市東区',
+  town: '西戸崎',
+  image: open('./app/images/post/uminonakamichi.jpeg'),
+  lat: 33.657135,
+  lng: 130.354791,
 )
