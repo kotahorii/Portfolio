@@ -17,28 +17,28 @@ User.create!(
 )
 
 User.create!(
-  email: "user4@test.com",
+  email: "user3@test.com",
   password: 'aaaaaa',
   name: '岡田 裕之',
-  image: open('./app/images/user/user4.jpeg'),
+  image: open('./app/images/user/user3.jpeg'),
   introduction: '新しい旅先を探したくて初めてみました。主に北海道、東北の写真をあげたいと思っています。',
   prefecture: 2,
 )
 
 User.create!(
-  email: "user5@test.com",
+  email: "user4@test.com",
   password: 'aaaaaa',
   name: '田中 歩',
-  image: open('./app/images/user/user5.jpeg'),
+  image: open('./app/images/user/user4.jpeg'),
   introduction: '新しいアプリだったので初めてみました。主に九州の写真をあげたいと思っています。',
   prefecture: 41,
 )
 
 User.create!(
-  email: "user6@test.com",
+  email: "user5@test.com",
   password: 'aaaaaa',
   name: '佐藤 一郎',
-  image: open('./app/images/user/user6.jpeg'),
+  image: open('./app/images/user/user5.jpeg'),
   introduction: '旅先の写真を撮るのが好きで初めてみました。主に関東の写真をあげたいと思っています。',
   prefecture: 14,
 )
@@ -53,7 +53,7 @@ User.create!(
 )
 
 Post.create!(
-  user_id: 4,
+  user_id: 3,
   title: '洞爺湖',
   body: '池が綺麗です。',
   prefecture: '北海道',
@@ -65,7 +65,7 @@ Post.create!(
 )
 
 Post.create!(
-  user_id: 4,
+  user_id: 3,
   title: '神居古潭の吊り橋',
   body: '趣があります。',
   prefecture: '北海道',
@@ -77,7 +77,7 @@ Post.create!(
 )
 
 Post.create!(
-  user_id: 4,
+  user_id: 3,
   title: 'さっぽろテレビ塔',
   body: 'すごく大きいです。',
   prefecture: '北海道',
@@ -161,19 +161,7 @@ Post.create!(
 )
 
 Post.create!(
-  user_id: 2,
-  title: '納屋橋',
-  body: 'おしゃれな橋です',
-  prefecture: '愛知県',
-  city: '名古屋市中区',
-  town: '栄',
-  image: open('./app/images/post/nayabashi.jpeg'),
-  lat: 35.164814,
-  lng: 136.90405,
-)
-
-Post.create!(
-  user_id: 5,
+  user_id: 4,
   title: '福岡ドーム',
   body: '夜景が綺麗なドームです',
   prefecture: '福岡県',
@@ -185,7 +173,7 @@ Post.create!(
 )
 
 Post.create!(
-  user_id: 5,
+  user_id: 4,
   title: '海の中道',
   body: '海が綺麗な場所です',
   prefecture: '福岡県',
@@ -194,4 +182,28 @@ Post.create!(
   image: open('./app/images/post/uminonakamichi.jpeg'),
   lat: 33.657135,
   lng: 130.354791,
+)
+
+Post.create!(
+  user_id: 4,
+  title: 'シーサイドももち海浜公園',
+  body: '海が近くて綺麗な公園です',
+  prefecture: '福岡県',
+  city: '福岡市早良区',
+  town: '百道浜',
+  image: open('./app/images/post/momochi.jpeg'),
+  lat: 33.594871,
+  lng: 130.35224,
+)
+
+Post.create!(
+  user_id: 4,
+  title: 'シーサイドももち海浜公園',
+  body: '海が近くて綺麗な公園です',
+  prefecture: '福岡県',
+  city: '福岡市早良区',
+  town: '百道浜',
+  image: open('./app/images/post/momochi.jpeg'),
+  lat: 33.594871,
+  lng: 130.35224,
 )
