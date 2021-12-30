@@ -43,6 +43,16 @@ User.create!(
   prefecture: 14,
 )
 
+10.times do |n|
+User.create!(
+  email: "text#{n + 6}@test.com",
+  password: 'aaaaaa',
+  name: "test#{n + 6}",
+  introduction: "test#{n + 6}",
+  prefecture: n + 2,
+)
+end
+
 User.create!(
   email: 'guest@guest.com',
   password: 'aaaaaa',
@@ -55,7 +65,7 @@ User.create!(
 Post.create!(
   user_id: 3,
   title: '洞爺湖',
-  body: '池が綺麗です。',
+  body: '湖が綺麗です。',
   prefecture: '北海道',
   city: '虻田郡洞爺湖町',
   town: '洞爺町',
@@ -230,4 +240,8 @@ Post.create!(
   image: open('./app/images/post/tokyo_station.jpeg'),
   lat: 35.680406,
   lng: 139.766486,
+)
+
+Favorite.create!(
+  
 )
