@@ -242,6 +242,93 @@ Post.create!(
   lng: 139.766486,
 )
 
-Favorite.create!(
-  
+15.times do |n|
+  rand(1..14).times do |m|
+    Favorite.create!(
+      post_id: n + 1,
+      user_id: m + 1
+    )
+  end
+end
+
+15.times do |n|
+  rand(1..14).times do |m|
+    Rate.create!(
+      post_id: n + 1,
+      user_id: m + 1,
+      rate: rand(0..5)
+    )
+  end
+end
+
+Label.create!(
+  user_id: 3,
+  post_id: 1,
+  name: '水'
+)
+
+Label.create!(
+  user_id: 3,
+  post_id: 1,
+  name: '自然'
+)
+
+Label.create!(
+  user_id: 3,
+  post_id: 2,
+  name: '橋'
+)
+
+Label.create!(
+  user_id: 3,
+  post_id: 2,
+  name: '自然'
+)
+
+Label.create!(
+  user_id: 3,
+  post_id: 3,
+  name: '塔'
+)
+
+Label.create!(
+  user_id: 3,
+  post_id: 3,
+  name: '市街'
+)
+
+Label.create!(
+  user_id: 1,
+  post_id: 4,
+  name: '水'
+)
+
+Label.create!(
+  user_id: 1,
+  post_id: 4,
+  name: '自然'
+)
+
+Label.create!(
+  user_id: 1,
+  post_id: 5,
+  name: '橋'
+)
+
+Label.create!(
+  user_id: 1,
+  post_id: 5,
+  name: '自然'
+)
+
+Label.create!(
+  user_id: 1,
+  post_id: 6,
+  name: '塔'
+)
+
+Label.create!(
+  user_id: 1,
+  post_id: 6,
+  name: '市街'
 )
