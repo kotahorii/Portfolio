@@ -306,19 +306,19 @@ Label.create!(
 Label.create!(
   user_id: 1,
   post_id: 4,
-  name: '自然'
+  name: '市街'
 )
 
 Label.create!(
   user_id: 1,
   post_id: 5,
-  name: '橋'
+  name: '塔'
 )
 
 Label.create!(
   user_id: 1,
   post_id: 5,
-  name: '自然'
+  name: '市街'
 )
 
 Label.create!(
@@ -330,5 +330,114 @@ Label.create!(
 Label.create!(
   user_id: 1,
   post_id: 6,
+  name: '夜景'
+)
+
+Label.create!(
+  user_id: 2,
+  post_id: 7,
+  name: '夜景'
+)
+
+Label.create!(
+  user_id: 2,
+  post_id: 7,
+  name: '水'
+)
+
+Label.create!(
+  user_id: 2,
+  post_id: 8,
   name: '市街'
 )
+
+Label.create!(
+  user_id: 2,
+  post_id: 8,
+  name: '人工物'
+)
+
+Label.create!(
+  user_id: 2,
+  post_id: 9,
+  name: '橋'
+)
+
+Label.create!(
+  user_id: 2,
+  post_id: 9,
+  name: '市街'
+)
+
+Label.create!(
+  user_id: 4,
+  post_id: 10,
+  name: '夜景'
+)
+
+Label.create!(
+  user_id: 4,
+  post_id: 10,
+  name: '人工物'
+)
+
+Label.create!(
+  user_id: 4,
+  post_id: 11,
+  name: '自然'
+)
+
+Label.create!(
+  user_id: 4,
+  post_id: 11,
+  name: '人工物'
+)
+
+Label.create!(
+  user_id: 4,
+  post_id: 12,
+  name: '夜景'
+)
+
+Label.create!(
+  user_id: 4,
+  post_id: 12,
+  name: '人工物'
+)
+
+Label.create!(
+  user_id: 5,
+  post_id: 13,
+  name: '夜景'
+)
+
+Label.create!(
+  user_id: 5,
+  post_id: 13,
+  name: '歴史'
+)
+
+Label.create!(
+  user_id: 5,
+  post_id: 14,
+  name: '人工物'
+)
+
+Label.create!(
+  user_id: 5,
+  post_id: 14,
+  name: '歴史'
+)
+
+Label.create!(
+  user_id: 5,
+  post_id: 15,
+  name: '人工物'
+)
+
+Label.create!(
+  user_id: 5,
+  post_id: 15,
+  name: '夜景'
+)
+
