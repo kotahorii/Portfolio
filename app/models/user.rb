@@ -16,4 +16,8 @@ class User < ActiveRecord::Base
   has_many :rates, dependent: :destroy
   has_many :rate_posts, through: :rate, source: :post
   has_many :labels, dependent: :destroy
+
+  validates :name, presence: true
+  validates :email, presence: true, uniqueness: true
+  validates :prefecture, presence: true
 end
