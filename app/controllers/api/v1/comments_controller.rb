@@ -9,6 +9,16 @@ class Api::V1::CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    comment = Comment.find(params[:id])
+    post = Post.find_by(id: comment.post_id)
+    if comment.destroy
+      render json: post, serializer: PostSerializer
+    else
+      render json: { data: '削除に失敗しました' }
+    end
+  end
+
   private
 
   def comment_params
