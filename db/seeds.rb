@@ -468,3 +468,182 @@ Label.create!(
   name: '夜景'
 )
 
+Comment.create!(
+  user_id: 1,
+  post_id: 1,
+  comment: '池がすごくきれいでした'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 1,
+  comment: '自然が豊かでした'
+)
+
+Comment.create!(
+  user_id: 4,
+  post_id: 2,
+  comment: '橋が大きかったです'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 2,
+  comment: '橋から見える森がきれいでした'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 3,
+  comment: '公園から見る塔がすごくきれいです'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 3,
+  comment: 'すごく大きかったです'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 4,
+  comment: '川が綺麗でした'
+)
+
+Comment.create!(
+  user_id: 3,
+  post_id: 4,
+  comment: 'いろいろな店がありました'
+)
+
+Comment.create!(
+  user_id: 4,
+  post_id: 5,
+  comment: '頂上から見る景色は圧巻でした'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 5,
+  comment: '夜のイルミネーションがきれいです'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 6,
+  comment: '海が近くて景色がきれいです'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 6,
+  comment: '夜のポートタワーがきれいです'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 7,
+  comment: '近くに水族館があります'
+)
+
+Comment.create!(
+  user_id: 3,
+  post_id: 7,
+  comment: '海を見渡せます'
+)
+
+Comment.create!(
+  user_id: 4,
+  post_id: 8,
+  comment: '色んなイベントが開催されています'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 8,
+  comment: 'プラネタリウムがきれいです'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 9,
+  comment: '懐かしさのある橋です'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 9,
+  comment: '橋と市街の風景が最高でした'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 10,
+  comment: 'すごく広くて驚きました'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 10,
+  comment: '花火がきれいでした'
+)
+
+Comment.create!(
+  user_id: 3,
+  post_id: 11,
+  comment: '海が見渡せる素敵な道です'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 11,
+  comment: '色々なイベントが開催されています'
+)
+
+Comment.create!(
+  user_id: 5,
+  post_id: 12,
+  comment: '夜のイルミネーションがきれいです'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 12,
+  comment: '海外のような雰囲気が最高でした'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 13,
+  comment: '人がすごくたくさんいました'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 13,
+  comment: '色んな種類の中華料理が食べられます'
+)
+
+Comment.create!(
+  user_id: 1,
+  post_id: 14,
+  comment: '夜は人が少なくなりおすすめです'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 14,
+  comment: '人力車に乗れて貴重な体験ができます'
+)
+
+Comment.create!(
+  user_id: 4,
+  post_id: 15,
+  comment: '夜はライトアップが見られてきれいでした'
+)
+
+Comment.create!(
+  user_id: 2,
+  post_id: 15,
+  comment: 'レトロな雰囲気が最高でした'
+)
