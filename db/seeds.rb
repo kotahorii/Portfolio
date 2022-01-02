@@ -252,8 +252,8 @@ Post.create!(
   city: '台東区',
   town: '雷門',
   image: open('./app/images/post/kaminarimonn.jpeg'),
-  lat: 35.449881,
-  lng: 139.652861,
+  lat: 35.709881,
+  lng: 139.794926,
 )
 
 Post.create!(
@@ -283,7 +283,7 @@ end
     Rate.create!(
       post_id: n + 1,
       user_id: m + 1,
-      rate: rand(0..5)
+      rate: rand(1..5)
     )
   end
 end
@@ -501,7 +501,7 @@ Comment.create!(
 Comment.create!(
   user_id: 1,
   post_id: 3,
-  comment: 'すごく大きかったです'
+  comment: '階段でも登れてスリル満点です'
 )
 
 Comment.create!(
