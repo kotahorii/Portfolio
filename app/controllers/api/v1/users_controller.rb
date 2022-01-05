@@ -1,7 +1,7 @@
 class Api::V1::UsersController < ApplicationController
   def index
     users = User.all.order(created_at: 'DESC')
-    render json: users
+    render status: 200, json: users
   end
 
   def update
@@ -14,7 +14,7 @@ class Api::V1::UsersController < ApplicationController
     if user.save
       render status: 200, json: user
     else
-      render status: 401, json: { message: '更新に失敗しました' }
+      render status: 422, json: { message: '更新に失敗しました' }
     end
   end
 
