@@ -28,6 +28,7 @@ class Api::V1::PostsController < ApplicationController
     @post.town = post_params[:town]
     @post.lat = post_params[:lat]
     @post.lng = post_params[:lng]
+    # imageが空のとき、もともとの画像が消えてしまうので場合分けしています
     @post.image = post_params[:image] if post_params[:image] != ''
     @post.user_id = current_api_v1_user.id
 

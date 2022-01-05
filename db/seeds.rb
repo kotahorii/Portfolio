@@ -1,3 +1,4 @@
+# 投稿用ユーザーのデータ
 User.create!(
   email: 'user1@test.com',
   password: 'aaaaaa',
@@ -43,6 +44,7 @@ User.create!(
   prefecture: 14
 )
 
+# いいね、評価用のユーザーデータ
 10.times do |n|
   User.create!(
     email: "text#{n + 6}@test.com",
@@ -53,6 +55,7 @@ User.create!(
   )
 end
 
+# ゲストユーザーのデータ
 User.create!(
   email: 'guest@guest.com',
   password: 'aaaaaa',
@@ -62,6 +65,7 @@ User.create!(
   prefecture: 14
 )
 
+# 投稿のテストデータ
 Post.create!(
   user_id: 3,
   title: '洞爺湖',
@@ -269,6 +273,7 @@ Post.create!(
   lng: 139.766486
 )
 
+# 各投稿にたいして1から14のあいだでランダムにいいねする
 15.times do |n|
   rand(1..14).times do |m|
     Favorite.create!(
@@ -278,6 +283,7 @@ Post.create!(
   end
 end
 
+# 各投稿にたいして1から14のあいだでランダムに評価する
 15.times do |n|
   rand(1..14).times do |m|
     Rate.create!(
@@ -288,6 +294,7 @@ end
   end
 end
 
+# 投稿のタグデータ
 Label.create!(
   user_id: 3,
   post_id: 1,
@@ -468,6 +475,7 @@ Label.create!(
   name: '夜景'
 )
 
+# 投稿に対するコメントデータ
 Comment.create!(
   user_id: 1,
   post_id: 1,

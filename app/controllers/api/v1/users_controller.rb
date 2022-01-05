@@ -9,6 +9,7 @@ class Api::V1::UsersController < ApplicationController
     user.name = user_params[:name]
     user.introduction = user_params[:introduction]
     user.prefecture = user_params[:prefecture]
+    # imageが空のとき、もともとの画像が消えてしまうので場合分けしています
     user.image = user_params[:image] if user_params[:image] != ''
 
     if user.save
